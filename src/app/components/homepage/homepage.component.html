@@ -1,41 +1,8 @@
 <div class="homepage__container">
-  <!-- partial:index.partial.html -->
-  <div class="sakura-falling"></div>
-  <img src="https://i.imgur.com/dGOOfnA.png" alt="image-top-right" class="top-right-decoration">
-  <img src="https://i.imgur.com/t6ffnbn.png" alt="image-top-left" class="top-left-decoration">
-  <section id="media"></section>
-  <div class="wrap">
-    <div class="title">
-      <h1>Groom</h1>
-      <h2>&</h2>
-      <h1>Bride</h1>
-      <h3>।। Wedding Ceremony ।।</h3>
-      <p>
-        <span class="date">{{celebrationDate | date: 'YYYY-MM-dd hh:mm'}}</span>
-        <br>
-        <span class="place"> In place A</span>
-      </p>
-    </div>
-  </div>
-  <div id="time">
-    <div class='container'>
-      <div class='days block'>{{daysRemaining}}<br>Days</div>
-      <div class='hours block'>{{hoursRemaining}}<br>Hours</div>
-      <div class='minutes block'>{{minutesRemaining}}<br>Minutes</div>
-      <div class='seconds block'>{{secondsRemaining}}<br>Seconds</div>
-    </div>
-  </div>
-  <p class="dance-med form-group">
-    <textarea class="form-control" placeholder="Please write us some congratulation..."></textarea>
-  </p>
-  <div class="actions">
-    <button class="btn">
-      <div class="venue"><strong>Happy wedding!</strong></div>
-    </button>
-  </div>
-  <div class="music">
-    <audio src="./assets/mp3/background.mp3" id="my_audio" loop="loop"></audio>
-  </div>
-  <p class="inviter">We'd love to see
-    <span class="happiness"><b>you and spouse</b></span> in our ceremony!</p>
+  <section class="section">
+    <app-main-section [celebrationDate]="celebrationDate"></app-main-section>
+  </section>
+  <section class="section">
+    <app-intro></app-intro>
+  </section>
 </div>
